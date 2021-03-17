@@ -7,14 +7,27 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button_contador"
+        android:id="@+id/activity_main__btn__button_principal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Contador"
+        android:text="@string/title_btn_principal"
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/darker_gray"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/activity_main__img__img_dice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dado_vacio"
+        app:layout_constraintBottom_toTopOf="@id/activity_main__btn__button_principal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
